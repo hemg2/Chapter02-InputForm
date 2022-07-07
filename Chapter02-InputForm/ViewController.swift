@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         lblInterval.text = "갱신주기"
         lblInterval.font = UIFont.systemFont(ofSize: 14)
         // 추가하는개념
-        self.view.addSubview(lblInterval)
+        self.view.addSubview(lblInterval)  // 함수안에서 만든  변수
         
         //이메일 입력을 위한 텍스트 필드를 추가한다.
         self.paramEmail = UITextField()
@@ -59,7 +59,8 @@ class ViewController: UIViewController {
         self.paramEmail.font = UIFont.systemFont(ofSize: 13)
         self.paramEmail.borderStyle = .roundedRect
         // 뷰에 추가한다
-        self.view.addSubview(self.paramEmail)
+        self.view.addSubview(self.paramEmail)   // 클래스 함수의 변수  (함수밖에 전체변수) 위아래 서로가 다른이유다
+        // 실제값을 가져온다 셀프.변수명 
         
         //스위치 객체를 생성한다.
         self.paramUpdate = UISwitch()
